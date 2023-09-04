@@ -8,7 +8,7 @@ These are the getting started demos for Interbase with C# and Visual Studio in g
 
 ## Before you start
 
-Before running the demos from this folder, please, consider this blog posts series to get familiar with the  ADO.NET driver for Interbase, as well to properly prepare your environment:
+Before running the demos from this folder, please, consider the following blog posts to get familiar with the  ADO.NET driver for Interbase, as well to properly prepare your environment:
 
 [Introducing InterBase for .NET – A Super-Secure Embedded Data Warehouse For .NET Users](https://blogs.embarcadero.com/introducing-interbase-for-net-a-strongly-secure-embedded-data-store-for-net-users/)
 
