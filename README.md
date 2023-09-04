@@ -1,8 +1,6 @@
-## InterBase 
+# InterBase 
 
-# Ultrafast, scalable, embeddable SQL database with commercial-grade data security, disaster recovery and change synchronization
-
-Interbase Demos for Delphi, C++ Builder, C#, Python and others (work in progress)
+## Interbase Demos for Delphi, C++ Builder, C#, Python and others (work in progress)
 
 Read more about Interbase and available editions here:
 https://www.embarcadero.com/products/interbase
