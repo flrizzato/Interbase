@@ -11,7 +11,7 @@ Before running the demos from this folder, please, consider the following blog p
 
 [Getting Started With InterBase For .NET – Install, Configure And Secure Your Data in Minutes](https://blogs.embarcadero.com/getting-started-with-interbase-for-net-install-configure-and-secure-your-data-in-minutes/)
 
-[Getting Started With InterBase For .NET – Install, Configure And Secure Your Data in Minutes](https://blogs.embarcadero.com/your-first-net-interbase-app-how-to-connect-net-and-the-interbase-secure-data-store/)
+[Your first .NET/Interbase App – How to connect .NET and the Interbase secure data store](https://blogs.embarcadero.com/your-first-net-interbase-app-how-to-connect-net-and-the-interbase-secure-data-store/)
 
 [NET Apps using Embedded Interbase Database – How to deploy a secure database app with zero installation/administration](https://blogs.embarcadero.com/net-apps-using-embedded-interbase-database-how-to-deploy-a-secure-database-app-with-zero-installation-administration/)
 
