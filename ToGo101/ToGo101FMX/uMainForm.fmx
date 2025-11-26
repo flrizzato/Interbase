@@ -1,0 +1,151 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Interbase ToGo 101'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Button1: TButton
+      Align = Center
+      TabOrder = 0
+      Text = 'Open'
+      OnClick = Button1Click
+    end
+  end
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+    ItemEditAppearanceClassName = 'TListItemRightDetailDeleteAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 440.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=C:\data\employee.gdb'
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'DriverID=IB')
+    LoginPrompt = False
+    BeforeConnect = FDConnection1BeforeConnect
+    Left = 72
+    Top = 80
+  end
+  object FDPhysIBDriverLink1: TFDPhysIBDriverLink
+    Left = 72
+    Top = 136
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 72
+    Top = 192
+  end
+  object FDQuery1: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'SELECT * FROM EMPLOYEE ORDER BY FULL_NAME')
+    Left = 176
+    Top = 80
+    object FDQuery1EMP_NO: TSmallintField
+      FieldName = 'EMP_NO'
+      Origin = 'EMP_NO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object FDQuery1FIRST_NAME: TStringField
+      FieldName = 'FIRST_NAME'
+      Origin = 'FIRST_NAME'
+      Required = True
+      Size = 15
+    end
+    object FDQuery1LAST_NAME: TStringField
+      FieldName = 'LAST_NAME'
+      Origin = 'LAST_NAME'
+      Required = True
+    end
+    object FDQuery1PHONE_EXT: TStringField
+      FieldName = 'PHONE_EXT'
+      Origin = 'PHONE_EXT'
+      Size = 4
+    end
+    object FDQuery1HIRE_DATE: TSQLTimeStampField
+      FieldName = 'HIRE_DATE'
+      Origin = 'HIRE_DATE'
+      Required = True
+    end
+    object FDQuery1DEPT_NO: TStringField
+      FieldName = 'DEPT_NO'
+      Origin = 'DEPT_NO'
+      Required = True
+      FixedChar = True
+      Size = 3
+    end
+    object FDQuery1JOB_CODE: TStringField
+      FieldName = 'JOB_CODE'
+      Origin = 'JOB_CODE'
+      Required = True
+      Size = 5
+    end
+    object FDQuery1JOB_GRADE: TSmallintField
+      FieldName = 'JOB_GRADE'
+      Origin = 'JOB_GRADE'
+      Required = True
+    end
+    object FDQuery1JOB_COUNTRY: TStringField
+      FieldName = 'JOB_COUNTRY'
+      Origin = 'JOB_COUNTRY'
+      Required = True
+      Size = 15
+    end
+    object FDQuery1SALARY: TFMTBCDField
+      FieldName = 'SALARY'
+      Origin = 'SALARY'
+      Required = True
+      Precision = 18
+      Size = 2
+    end
+    object FDQuery1FULL_NAME: TStringField
+      FieldName = 'FULL_NAME'
+      Origin = 'FULL_NAME'
+      Size = 37
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDQuery1
+    ScopeMappings = <>
+    Left = 176
+    Top = 136
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 180
+    Top = 189
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListView1
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'FULL_NAME'
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'PHONE_EXT'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

@@ -1,0 +1,690 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+    <ProjectExtensions>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <PropertyGroup/>
+    <ItemGroup Condition="'$(Platform)'=='Win32'">
+        <DeployFile Include="$(BDS)\bin\cc32c370mt.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>cc32c370mt.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\Win32\Debug\ToGo101CPP.tds" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>ToGo101CPP.tds</RemoteName>
+            <DeployClass>DebugSymbols</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\FireDACCommonDriver370.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>FireDACCommonDriver370.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\bindengine370.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>bindengine370.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\vclFireDAC370.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>vclFireDAC370.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\license.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\license.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\interbase.msg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\interbase.msg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\intl\gdsintl.dll" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\interbase\intl\</RemoteDir>
+            <RemoteName>gdsintl.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\intl\gdsintl.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\interbase\intl\</RemoteDir>
+            <RemoteName>gdsintl.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\rtl370.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>rtl370.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\vclimg370.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>vclimg370.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\vcldb370.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>vcldb370.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\xmlrtl370.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>xmlrtl370.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\ibxml.dll" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>ibxml.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\ibxml.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>ibxml.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\FireDACCommon370.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>FireDACCommon370.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\FireDACIBDriver370.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>FireDACIBDriver370.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\dbrtl370.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>dbrtl370.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\bindcompvcl370.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>bindcompvcl370.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\ADMIN.IB" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\interbase\</RemoteDir>
+            <RemoteName>ADMIN.IB</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\ADMIN.IB" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\interbase\</RemoteDir>
+            <RemoteName>ADMIN.IB</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\vclx370.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>vclx370.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\oss_license_notice.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\oss_license_notice.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\bindcomp370.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>bindcomp370.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\bindcompvclwinx370.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>bindcompvclwinx370.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_iblite.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\interbase\license\</RemoteDir>
+            <RemoteName>reg_iblite.txt</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_iblite.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\interbase\license\</RemoteDir>
+            <RemoteName>reg_iblite.txt</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.txt</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\cc32370mt.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>cc32370mt.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.txt</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\ibtogo.dll" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>ibtogo.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\ibtogo.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>ibtogo.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\cc32370.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>cc32370.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\vcl370.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>vcl370.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\FireDAC370.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>FireDAC370.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="C:\data\employee.gdb" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>employee.gdb</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\vclwinx370.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>vclwinx370.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\borlndmm.dll" Condition="'$(UsingDelphiRTL)'=='true'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>borlndmm.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\ib_util.dll" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>ib_util.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\ib_util.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>ib_util.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\cc32c370.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>cc32c370.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\Win32\Debug\ToGo101CPP.exe" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>ToGo101CPP.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win64'">
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\ib_util64.dll" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>ib_util64.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\ib_util64.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>ib_util64.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\intl\gdsintl.dll" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\interbase\intl\</RemoteDir>
+            <RemoteName>gdsintl.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\intl\gdsintl.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\interbase\intl\</RemoteDir>
+            <RemoteName>gdsintl.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\ibtogo64.dll" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>ibtogo64.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\ibtogo64.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>ibtogo64.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\ADMIN.IB" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\interbase\</RemoteDir>
+            <RemoteName>ADMIN.IB</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\ADMIN.IB" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\interbase\</RemoteDir>
+            <RemoteName>ADMIN.IB</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin64\borlndmm.dll" Condition="'$(UsingDelphiRTL)'=='true'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>borlndmm.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin64\cc64370mt.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>cc64370mt.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.txt</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.txt</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin64\cc64370.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>cc64370.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\ibxml64.dll" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>ibxml64.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\ibxml64.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>ibxml64.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\license.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\license.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\interbase.msg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_iblite.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\interbase\license\</RemoteDir>
+            <RemoteName>reg_iblite.txt</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_iblite.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\interbase\license\</RemoteDir>
+            <RemoteName>reg_iblite.txt</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\interbase.msg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\oss_license_notice.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\oss_license_notice.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win64x'">
+        <DeployFile Include=".\Win64x\Debug\ToGo101CPP.exe" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>ToGo101CPP.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="C:\data\employee.gdb" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>employee.gdb</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\data\employee.gdb" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>employee.gdb</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\Win64x\Debug\ToGo101CPP.pdb" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>ToGo101CPP.pdb</RemoteName>
+            <DeployClass>DebugSymbols</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\Win64x\Release\ToGo101CPP.exe" Condition="'$(Config)'=='Release'">
+            <RemoteDir>ToGo101CPP\</RemoteDir>
+            <RemoteName>ToGo101CPP.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+    </ItemGroup>
+</Project>

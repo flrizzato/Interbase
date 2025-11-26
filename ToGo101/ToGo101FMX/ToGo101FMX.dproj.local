@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/10/11 18:09:31.000.807,=C:\Users\Fernando\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/10/11 18:14:55.000.849,C:\Users\Fernando\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\Fernando\Documents\Embarcadero\Studio\Projects\TOGO101\uMainForm.fmx</Transaction>
+    <Transaction>2025/10/11 18:14:55.000.849,C:\Users\Fernando\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Fernando\Documents\Embarcadero\Studio\Projects\TOGO101\uMainForm.pas</Transaction>
+    <Transaction>2025/10/11 18:15:05.000.189,C:\Users\Fernando\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Fernando\Documents\Embarcadero\Studio\Projects\TOGO101\ToGo101.dproj</Transaction>
+    <Transaction>2025/10/11 20:15:09.000.357,=C:\data\employee.gdb</Transaction>
+    <Transaction>2025/10/13 12:14:46.000.685,C:\Users\Fernando\Documents\Embarcadero\Studio\Projects\ToGo101\ToGo101FMX\ToGo101.dproj=C:\Users\Fernando\Documents\Embarcadero\Studio\Projects\ToGo101\ToGo101FMX\ToGo101FMX.dproj</Transaction>
+    <Transaction>2025/10/23 12:00:18.000.949,C:\data\employee.gdb=</Transaction>
+    <Transaction>2025/10/23 12:00:42.000.052,=C:\data\2020\employee.gdb</Transaction>
+    <Transaction>2025/11/11 11:35:45.000.436,C:\data\2020\employee.gdb=</Transaction>
+    <Transaction>2025/11/11 11:35:55.000.537,=C:\data\employee.gdb</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PmacOS iOSSimARM64="_iossimulator_6DDF23A6-B479-4B60-BC1A-F59D20072279" iOSDevice64=""/>
+		<NoProfile Android64="RQCW507ZHSA" Android="RQCW507ZHSA"/>
+	</ActiveMobileDevice>
+</BorlandProject>

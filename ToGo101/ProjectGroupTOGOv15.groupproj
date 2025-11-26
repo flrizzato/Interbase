@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{1E879A6E-2329-4EE8-B7FD-930C75F49CB2}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ToGo101VCL\ToGo101VCL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ToGo101CPP\ToGo101CPP.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ToGo101FMX\ToGo101FMX.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ToGo101VCL">
+        <MSBuild Projects="ToGo101VCL\ToGo101VCL.dproj"/>
+    </Target>
+    <Target Name="ToGo101VCL:Clean">
+        <MSBuild Projects="ToGo101VCL\ToGo101VCL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ToGo101VCL:Make">
+        <MSBuild Projects="ToGo101VCL\ToGo101VCL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ToGo101CPP">
+        <MSBuild Projects="ToGo101CPP\ToGo101CPP.cbproj"/>
+    </Target>
+    <Target Name="ToGo101CPP:Clean">
+        <MSBuild Projects="ToGo101CPP\ToGo101CPP.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ToGo101CPP:Make">
+        <MSBuild Projects="ToGo101CPP\ToGo101CPP.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="ToGo101FMX">
+        <MSBuild Projects="ToGo101FMX\ToGo101FMX.dproj"/>
+    </Target>
+    <Target Name="ToGo101FMX:Clean">
+        <MSBuild Projects="ToGo101FMX\ToGo101FMX.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ToGo101FMX:Make">
+        <MSBuild Projects="ToGo101FMX\ToGo101FMX.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ToGo101VCL;ToGo101CPP;ToGo101FMX"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ToGo101VCL:Clean;ToGo101CPP:Clean;ToGo101FMX:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ToGo101VCL:Make;ToGo101CPP:Make;ToGo101FMX:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
