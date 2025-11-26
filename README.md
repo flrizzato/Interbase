@@ -18,9 +18,9 @@ To download Interbase ToGo Trial (embedded):<br>
 https://www.embarcadero.com/products/interbase/togo/start-for-free
 
 Additional Resources:<br>
-https://docwiki.embarcadero.com/InterBase/15/en/Main_Page
-https://docwiki.embarcadero.com/InterBase/15/en/Creating_Subscriptions_to_Change_Views
-https://docwiki.embarcadero.com/InterBase/15/en/Tablespace
+https://docwiki.embarcadero.com/InterBase/en/Main_Page
+https://docwiki.embarcadero.com/InterBase/en/Creating_Subscriptions_to_Change_Views
+https://docwiki.embarcadero.com/InterBase/en/Tablespace
 https://github.com/Embarcadero/InterBaseODBCDriver
 https://github.com/Embarcadero/InterBasePython
 https://github.com/Embarcadero/IB.NETDataProvider
